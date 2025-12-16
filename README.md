@@ -21,8 +21,10 @@ find_pairs("2 1") => {(1, 2)}
 
 ```
 find_pairs("24 7 365 94") => {(7, 94), (24, 94), (94, 365), (7, 365), (24, 365), (7, 24)}
+
+{(24, 365), (24, 94), (7, 24), (7, 365), (7, 24), (94, 365)}
 ```
 
 ```
-find_pairs("94") => set() # A single number cannot be paired, so an empty set should be returned
+<!-- find_pairs("94") => set() # A single number cannot be paired, so an empty set should be returned -->
 ```
