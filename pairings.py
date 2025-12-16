@@ -10,10 +10,6 @@
   # 4. if the string only contain one element, return the empty set
 
 
-
-
-#  4. return the set
-
 def find_pairs(num_string):
 	#  1. convert the string to a list of integers
 	list_integer = [int(num) for num in num_string.split()]
@@ -32,7 +28,8 @@ def find_pairs(num_string):
 			if current_one < compared_one:
 				tuple_pair = (current_one, compared_one)
 				pairing_result.add(tuple_pair)
-
+				
+	#  4. return the set	
 	return pairing_result
 
 
